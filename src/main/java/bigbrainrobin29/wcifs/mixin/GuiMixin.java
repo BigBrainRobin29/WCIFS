@@ -11,7 +11,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(Gui.class)
 public class GuiMixin {
-	@Inject(at = @At("HEAD"), method = "setOverlayMessage", cancellable = true)
+	@SuppressWarnings("DataFlowIssue")
+    @Inject(at = @At("HEAD"), method = "setOverlayMessage", cancellable = true)
 	private void init(Component component, boolean bl, CallbackInfo info) {
 		if (component.getContents() instanceof TranslatableContents translatableContents && translatableContents.getKey().equals("block.minecraft.bed.no_sleep")) {
 			component = component.copy().append(WCIFS.getTimeUntilNightComponent());
