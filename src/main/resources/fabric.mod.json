@@ -2,15 +2,20 @@
 	"schemaVersion": 1,
 	"id": "wcifs",
 	"version": "${version}",
-	"name": "wcifs",
+	"name": "WCIFS",
 	"description": "This mod tells you how long it is until night.",
 	"authors": [
 		"BigBrainRobin29"
 	],
-	"contact": {},
-	"license": "CC0-1.0",
+	"contact": {
+		"homepage": "https://github.com/BigBrainRobin29/WCIFS",
+		"issues": "https://github.com/BigBrainRobin29/WCIFS/issues",
+		"sources": "https://github.com/BigBrainRobin29/WCIFS",
+		"discord": "https://discord.gg/sE4cgCZjpk"
+	},
+	"license": "CC BY-NC-SA 4.0",
 	"icon": "assets/wcifs/icon.png",
-	"environment": "*",
+	"environment": "client",
 	"entrypoints": {
 		"client": [
           "bigbrainrobin29.wcifs.WCIFS"
@@ -21,12 +26,9 @@
 	],
 	"depends": {
 		"fabricloader": "*",
-		"minecraft": "*",
-		"java": "*",
+		"minecraft": ">=1.21",
+		"java": "21",
 		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
 	},
 	"accessWidener" : "wcifs.accesswidener"
 }
