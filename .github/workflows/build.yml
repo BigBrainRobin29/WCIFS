@@ -18,6 +18,10 @@ jobs:
     steps:
       - name: checkout repository
         uses: actions/checkout@v4
+      - name: disable ipv6
+        run: |
+          sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
+          sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
       - name: validate gradle wrapper
         uses: gradle/wrapper-validation-action@v2
       - name: setup jdk ${{ matrix.java }}
@@ -25,10 +29,6 @@ jobs:
         with:
           java-version: ${{ matrix.java }}
           distribution: 'microsoft'
-      - name: disable ipv6
-        run: |
-          sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
-          sudo sysctl -w net.ipv6.conf.default.disable_ipv6=1
       - name: make gradle wrapper executable
         run: chmod +x ./gradlew
       - name: build
