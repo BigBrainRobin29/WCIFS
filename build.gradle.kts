@@ -97,7 +97,7 @@ publishMods {
     type = STABLE
     modLoaders.add("fabric")
 
-    dryRun = true // providers.gradleProperty("modrinth_token").getOrNull() == null
+    dryRun = providers.gradleProperty("modrinth_token").getOrNull() == null
 
     val mcVersions = (property("mod.mc_targets") as String)
         .split(" ")
