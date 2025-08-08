@@ -4,6 +4,8 @@
 ## What it does
 The simple Bedtime / "When can I finally sleep" (WCIFS) mod shows you how long you have to wait until you can sleep when clicking on a bed.
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bce72e3d-1179-44a5-b635-5ca382d4c596" />
+
 ## Supported Versions
 
 | Minecraft Version | Status    |
