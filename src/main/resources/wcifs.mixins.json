@@ -1,11 +1,11 @@
 {
-	"required": true,
-	"package": "bigbrainrobin29.wcifs.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-      "GuiMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	}
+  "required": true,
+  "package": "dev.bigbrainrobin29.wcifs.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "InGameHudMixin"
+  ]
 }

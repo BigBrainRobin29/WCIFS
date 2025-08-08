@@ -1,0 +1,2 @@
+This version is the first version to use [Stonecutter](https://stonecutter.kikugie.dev/) gradle plugin, which is used to make multi-version development easier.\
+Thanks to this plugin, the mod now supports the Minecraft versions 1.17 - 1.21.8.

@@ -1,34 +1,31 @@
 {
-	"schemaVersion": 1,
-	"id": "wcifs",
-	"version": "${version}",
-	"name": "WCIFS",
-	"description": "This mod tells you how long it is until night.",
-	"authors": [
-		"BigBrainRobin29"
-	],
-	"contact": {
-		"homepage": "https://github.com/BigBrainRobin29/WCIFS",
-		"issues": "https://github.com/BigBrainRobin29/WCIFS/issues",
-		"sources": "https://github.com/BigBrainRobin29/WCIFS",
-		"discord": "https://discord.gg/sE4cgCZjpk"
-	},
-	"license": "CC BY-NC-SA 4.0",
-	"icon": "assets/wcifs/icon.png",
-	"environment": "client",
-	"entrypoints": {
-		"client": [
-          "bigbrainrobin29.wcifs.WCIFS"
-		]
-	},
-	"mixins": [
-		"wcifs.mixins.json"
-	],
-	"depends": {
-		"fabricloader": "*",
-		"minecraft": ">=1.21",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"accessWidener" : "wcifs.accesswidener"
+  "schemaVersion": 1,
+  "id": "${id}",
+  "version": "${version}",
+  "name": "${name}",
+  "description": "This mod tells you how long it is until night when clicking on a bed.",
+  "authors": [
+    "BigBrainRobin29"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/wcifs",
+    "issues": "https://github.com/BigBrainRobin29/WCIFS/issues",
+    "sources": "https://github.com/BigBrainRobin29/WCIFS"
+  },
+  "license": "CC BY-NC-SA 4.0",
+  "icon": "assets/wcifs/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.bigbrainrobin29.wcifs.WCIFS"
+    ]
+  },
+  "mixins": [
+    "wcifs.mixins.json"
+  ],
+  "accessWidener": "${id}.accesswidener",
+  "depends": {
+    "minecraft": "${minecraft}",
+    "${fapi_id}": "*"
+  }
 }
