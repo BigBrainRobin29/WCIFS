@@ -108,11 +108,7 @@ publishMods {
         projectDescription = rootProject.file("README.md").readText()
         accessToken = providers.gradleProperty("modrinth_token")
         minecraftVersions.addAll(mcVersions)
-        if (stonecutter.eval(stonecutter.current.version, ">=1.19.2")) {
-            requires("fabric-api")
-        } else {
-            requires("fabric")
-        }
+        requires("fabric-api")
     }
 
     /*github {
